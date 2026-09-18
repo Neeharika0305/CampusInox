@@ -23,7 +23,7 @@ function IssueDetails() {
 
       try {
         const response = await fetch(
-          `http://localhost:5000/api/issues/${id}`,
+          `${import.meta.env.VITE_API_URL}/api/issues/${id}`,
           {
             method: "GET",
             headers: {
@@ -152,7 +152,7 @@ function IssueDetails() {
               </h5>
 
               <img
-                src={`http://localhost:5000${issue.image_url}`}
+                src={`${import.meta.env.VITE_API_URL}${issue.image_url}`}
                 alt="Issue evidence"
                 className="img-fluid rounded border mt-2"
                 style={{

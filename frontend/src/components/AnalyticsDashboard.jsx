@@ -9,7 +9,7 @@ import {
   ResponsiveContainer
 } from "recharts";
 
-const API = "http://127.0.0.1:5000/api/analytics";
+const API = `${import.meta.env.VITE_API_URL}/api/analytics`;
 
 export default function AnalyticsDashboard() {
   const [summary, setSummary] = useState({});

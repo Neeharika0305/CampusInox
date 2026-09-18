@@ -25,7 +25,7 @@ function MyIssues() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/issues/my",
+        `${import.meta.env.VITE_API_URL}/api/issues/my`,
         {
           method: "GET",
           headers: {

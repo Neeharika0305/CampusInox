@@ -78,7 +78,7 @@ function ReportIssue() {
       // ==========================================
 
       const aiResponse = await fetch(
-        "http://localhost:5000/api/ai/analyze",
+        `${import.meta.env.VITE_API_URL}/api/ai/analyze`,
         {
           method: "POST",
           headers: {
@@ -105,7 +105,7 @@ function ReportIssue() {
       // ==========================================
 
       const duplicateResponse = await fetch(
-        "http://localhost:5000/api/ai/check-duplicate",
+        `${import.meta.env.VITE_API_URL}/api/ai/check-duplicate`,
         {
           method: "POST",
           headers: {
@@ -265,7 +265,7 @@ function ReportIssue() {
       // ==============================
 
       const response = await fetch(
-        "http://localhost:5000/api/issues",
+        `${import.meta.env.VITE_API_URL}/api/issues`,
         {
           method: "POST",
           headers: {
