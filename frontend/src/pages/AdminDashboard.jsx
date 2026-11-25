@@ -488,44 +488,7 @@ function AdminDashboard() {
 
           <div style={styles.performanceGrid}>
 
-            <div style={styles.performanceCard}>
 
-              <div style={styles.cardHeader}>
-                <div>
-                  <div style={styles.cardLabel}>
-                    RESOLUTION PERFORMANCE
-                  </div>
-
-                  <h3 style={styles.cardTitle}>
-                    Resolution Rate
-                  </h3>
-                </div>
-
-                <div style={styles.rateCircle}>
-                  {resolutionRate}%
-                </div>
-              </div>
-
-              <div style={styles.progressTrack}>
-                <div
-                  style={{
-                    ...styles.progressBar,
-                    width: `${resolutionRate}%`,
-                  }}
-                />
-              </div>
-
-              <div style={styles.progressLabels}>
-                <span>
-                  {resolvedCount} resolved
-                </span>
-
-                <span>
-                  {issues.length - resolvedCount} remaining
-                </span>
-              </div>
-
-            </div>
 
             <div style={styles.quickCard}>
 
